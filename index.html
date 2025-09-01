@@ -6,23 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bravo Zoom - Unlock World-Class Chinese Engineering Talent</title>
     <meta name="description" content="Bravo Zoom helps companies source, vet, and compliantly hire elite remote engineers in China. Book a 15-minute consultation to get started.">
-    <link rel="icon" href="/Bravo Zoom logo.png" type="image/png">
+    <link rel="icon" href="images/Bravo Zoom logo.png" type="image/png">
     <meta name="theme-color" content="#b91c1c">
     <meta property="og:title" content="Bravo Zoom - Unlock World-Class Chinese Engineering Talent">
     <meta property="og:description" content="End-to-end partner for sourcing, vetting, and compliantly hiring elite remote engineers in China.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="/Bravo Zoom logo.png">
+    <meta property="og:image" content="images/Bravo Zoom logo.png">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Bravo Zoom - Unlock World-Class Chinese Engineering Talent">
     <meta name="twitter:description" content="End-to-end partner for sourcing, vetting, and compliantly hiring elite remote engineers in China.">
     
     <!-- EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-            emailjs.init("46VvyhfbARd-xquRP");
-        })();
-    </script>
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -32,64 +27,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Custom Tailwind Config -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'inter': ['Inter', 'sans-serif'],
-                    },
-                    colors: {
-                        'primary': '#b91c1c', // Red 700
-                        'primary-light': '#ef4444', // Red 500
-                        'accent': '#dc2626', // Red 600
-                        'gray-50': '#f9fafb',
-                        'gray-100': '#f3f4f6',
-                    },
-                    animation: {
-                        'fade-in': 'fadeIn 0.6s ease-out',
-                        'slide-up': 'slideUp 0.6s ease-out',
-                    },
-                },
-            },
-        }
-    </script>
-    
-    <style>
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        
-        @keyframes slideUp {
-            from { 
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to { 
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        html {
-            scroll-behavior: smooth;
-        }
-        
-        .gradient-bg {
-            background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
-        }
-        
-        .card-shadow {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            transition: box-shadow 0.3s ease;
-        }
-        
-        .card-shadow:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-    </style>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="font-inter text-gray-900 leading-relaxed">
@@ -98,7 +37,7 @@
     <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
         <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center space-x-3">
-                <img src="Bravo Zoom logo.png" alt="Bravo Zoom logo" class="h-24 w-auto" fetchpriority="high" decoding="async">
+                <img src="images/Bravo Zoom logo.png" alt="Bravo Zoom logo" class="h-24 w-auto" fetchpriority="high" decoding="async">
             </div>
 
             <!-- Desktop nav -->
@@ -168,7 +107,7 @@
                     <div class="card-shadow bg-white rounded-2xl p-8 md:p-12 border border-gray-100">
                         <div class="flex flex-col md:flex-row items-center gap-8">
                             <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-4 flex items-center justify-center">
-                                <img src="Capital Today logo.png" alt="Capital Today logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="160" height="160">
+                                <img src="images/Capital Today logo.png" alt="Capital Today logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="160" height="160">
                             </div>
                             
                             <div class="text-center md:text-left">
@@ -196,7 +135,7 @@
                 <div class="max-w-3xl mx-auto">
                     <div class="card-shadow bg-white rounded-2xl p-8 md:p-10 border border-gray-100 text-center">
                         <div class="w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 bg-white p-2">
-                            <img src="Zingage Logo.png" alt="Zingage logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="80" height="80">
+                            <img src="images/Zingage Logo.png" alt="Zingage logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="80" height="80">
                         </div>
                         
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Zingage</h3>
@@ -449,131 +388,8 @@
         </div>
     </footer>
 
-    <script>
-        // IntersectionObserver for slide-up animations (with graceful fallback)
-        const slideUpObserver = ('IntersectionObserver' in window)
-            ? new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { rootMargin: '0px 0px -150px 0px' })
-            : null;
-
-        // Form submission handler (EmailJS)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Simple validation
-            if (!data.name || !data.email || !data.company) {
-                alert('Please fill in all required fields.');
-                return;
-            }
-            
-            const submitButton = this.querySelector('button[type="submit"]');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Sending...';
-            submitButton.disabled = true;
-
-            // EmailJS template parameters for your notification
-            const notificationParams = {
-                to_email: 'hanyao.li@bravozoom.io',
-                from_name: data.name,
-                from_company: data.company,
-                from_email: data.email,
-                message: data.message || 'No additional message provided.',
-                subject: 'New Consultation Request - Bravo Zoom'
-            };
-
-            // EmailJS template parameters for customer confirmation
-            const customerParams = {
-                to_email: data.email,
-                customer_name: data.name,
-                calendly_link: 'https://calendly.com/hanyao-li-bravozoom/30min',
-                subject: 'Thank you for your interest in Bravo Zoom'
-            };
-
-            // Send notification email to you
-            emailjs.send('service_jpgcb3k', 'template_gu9gonb', notificationParams)
-                .then(function(response) {
-                    console.log('Notification sent!', response.status, response.text);
-                    
-                    // Send confirmation email to customer
-                    return emailjs.send('service_jpgcb3k', 'template_yh56n3l', customerParams);
-                })
-                .then(function(response) {
-                    console.log('Confirmation sent!', response.status, response.text);
-                    alert('Thank you for your interest! Check your email for our Calendly link to schedule your consultation.');
-                    document.querySelector('form').reset();
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    alert('Sorry, there was an error sending your message. Please try again or contact us directly.');
-                })
-                .finally(function() {
-                    submitButton.textContent = originalText;
-                    submitButton.disabled = false;
-                });
-        });
-
-        // Initialize slide-up elements as invisible
-        document.addEventListener('DOMContentLoaded', function() {
-            const elements = document.querySelectorAll('.animate-slide-up');
-            elements.forEach(element => {
-                element.style.opacity = '0';
-                element.style.transform = 'translateY(30px)';
-                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
-                if (slideUpObserver) {
-                    slideUpObserver.observe(element);
-                }
-            });
-
-            // Fallback for browsers without IntersectionObserver
-            if (!slideUpObserver) {
-                const fallback = () => {
-                    const windowHeight = window.innerHeight;
-                    elements.forEach(element => {
-                        const elementTop = element.getBoundingClientRect().top;
-                        const elementVisible = 150;
-                        if (elementTop < windowHeight - elementVisible) {
-                            element.style.opacity = '1';
-                            element.style.transform = 'translateY(0)';
-                        }
-                    });
-                };
-                window.addEventListener('scroll', fallback);
-                window.addEventListener('load', fallback);
-                setTimeout(fallback, 100);
-            }
-        });
-
-        // Mobile menu toggle
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            if (mobileButton && mobileMenu) {
-                mobileButton.addEventListener('click', () => {
-                    const isExpanded = mobileButton.getAttribute('aria-expanded') === 'true';
-                    mobileButton.setAttribute('aria-expanded', String(!isExpanded));
-                    mobileMenu.classList.toggle('hidden');
-                });
-
-                // Close menu when clicking a nav link
-                const mobileLinks = mobileMenu.querySelectorAll('a[href^="#"]');
-                mobileLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        mobileMenu.classList.add('hidden');
-                        mobileButton.setAttribute('aria-expanded', 'false');
-                    });
-                });
-            }
-        });
-    </script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
 
 </body>
 </html>
