@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<!-- Updated: Bravo Zoom rebrand with red logo and Capital Today funding -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bravo Zoom - Unlock World-Class Chinese Engineering Talent</title>
+    <meta name="description" content="Bravo Zoom helps companies source, vet, and compliantly hire elite remote engineers in China. Book a 15-minute consultation to get started.">
+    <link rel="icon" href="/Bravo Zoom logo.png" type="image/png">
+    <meta name="theme-color" content="#b91c1c">
+    <meta property="og:title" content="Bravo Zoom - Unlock World-Class Chinese Engineering Talent">
+    <meta property="og:description" content="End-to-end partner for sourcing, vetting, and compliantly hiring elite remote engineers in China.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="/Bravo Zoom logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bravo Zoom - Unlock World-Class Chinese Engineering Talent">
+    <meta name="twitter:description" content="End-to-end partner for sourcing, vetting, and compliantly hiring elite remote engineers in China.">
+    
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("46VvyhfbARd-xquRP");
+        })();
+    </script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#b91c1c', // Red 700
+                        'primary-light': '#ef4444', // Red 500
+                        'accent': '#dc2626', // Red 600
+                        'gray-50': '#f9fafb',
+                        'gray-100': '#f3f4f6',
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                    },
+                },
+            },
+        }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .card-shadow:hover {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+
+<body class="font-inter text-gray-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-100 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="Bravo Zoom logo.png" alt="Bravo Zoom logo" class="h-24 w-auto" fetchpriority="high" decoding="async">
+            </div>
+
+            <!-- Desktop nav -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#hero" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Home</a>
+                <a href="#social-proof" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Funders</a>
+                <a href="#our-story" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Our Story</a>
+                <a href="#our-talent" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Talent</a>
+                <a href="#our-process" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Process</a>
+                <a href="#contact" class="text-gray-700 hover:text-gray-900 font-medium transition-colors focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Contact</a>
+                <a href="#contact" class="bg-primary hover:bg-primary-light text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">Get Started</a>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary" aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile nav menu -->
+        <div id="mobile-menu" class="md:hidden hidden border-t border-gray-100 bg-white/95 backdrop-blur-sm">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#hero" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Home</a>
+                <a href="#social-proof" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Funders</a>
+                <a href="#our-story" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Our Story</a>
+                <a href="#our-talent" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Talent</a>
+                <a href="#our-process" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Process</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 font-medium">Contact</a>
+                <a href="#contact" class="block text-center bg-primary hover:bg-primary-light text-white font-semibold px-4 py-2 rounded-lg transition-all">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center gradient-bg px-4 py-20 pt-32 scroll-mt-28">
+        <div class="max-w-6xl mx-auto text-center animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-8 leading-tight">
+                Bravo Zoom: Unlock World-Class<br>
+                <span class="text-primary">Chinese Engineering</span><br>
+                Talent
+            </h1>
+            
+            <p class="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto font-light">
+                We are your end-to-end partner for sourcing, vetting, and compliantly hiring 
+                elite remote engineers in China.
+            </p>
+            
+            <a href="#contact" class="bg-primary hover:bg-primary-light text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-lg focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">
+                Book a Consultation
+            </a>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section id="social-proof" class="py-20 px-4 bg-white scroll-mt-28">
+        <div class="max-w-6xl mx-auto">
+            
+            <!-- Our Foundation & Advisors -->
+            <div class="mb-20 animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+                    Funded by Industry Leaders
+                </h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="card-shadow bg-white rounded-2xl p-8 md:p-12 border border-gray-100">
+                        <div class="flex flex-col md:flex-row items-center gap-8">
+                            <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden flex-shrink-0 bg-white p-4 flex items-center justify-center">
+                                <img src="Capital Today logo.png" alt="Capital Today logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="160" height="160">
+                            </div>
+                            
+                            <div class="text-center md:text-left">
+                                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+                                    Capital Today (今日资本)
+                                </h3>
+                                <p class="text-lg text-primary font-semibold mb-4">
+                                    Leading Venture Capital Firm
+                                </p>
+                                <p class="text-gray-600 text-lg leading-relaxed">
+                                    "We are proud to be funded by Capital Today, one of China's most prestigious venture capital firms. With over $6 billion in assets under management and a portfolio including industry leaders like JD.com, Didi, and ByteDance, Capital Today's backing provides Bravo Zoom with the resources and strategic guidance to revolutionize cross-border talent acquisition."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Our Partners -->
+            <div class="animate-slide-up">
+                <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+                    Trusted By The Next Generation of Leaders
+                </h2>
+                
+                <div class="max-w-3xl mx-auto">
+                    <div class="card-shadow bg-white rounded-2xl p-8 md:p-10 border border-gray-100 text-center">
+                        <div class="w-20 h-20 rounded-xl flex items-center justify-center mx-auto mb-6 bg-white p-2">
+                            <img src="Zingage Logo.png" alt="Zingage logo" class="w-full h-full object-contain" loading="lazy" decoding="async" width="80" height="80">
+                        </div>
+                        
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Zingage</h3>
+                        <p class="text-lg text-gray-600 mb-4">
+                            An AI-powered operations platform for home-care agencies.
+                        </p>
+                        <p class="text-primary font-semibold">
+                            Backed by Bessemer Venture Partners
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="py-20 px-4 gradient-bg scroll-mt-28">
+        <div class="max-w-5xl mx-auto animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">
+                Built by Founders, for Founders
+            </h2>
+            
+            <div class="space-y-8 text-lg text-gray-600 leading-relaxed">
+                <p class="text-center max-w-4xl mx-auto">
+                    Bravo Zoom was founded by a US-based CEO and a China-based CTO who lived the challenges of cross-border hiring firsthand.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-12 mt-16">
+                    <div class="card-shadow bg-white rounded-2xl p-8">
+                        <div class="w-16 h-16 bg-primary rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p>
+                            We are not a traditional recruiting agency. We are a tech-enabled partner that combines deep expertise in both the US and Chinese tech ecosystems with a modern, AI-driven process to find the talent no one else can.
+                        </p>
+                    </div>
+                    
+                    <div class="card-shadow bg-white rounded-2xl p-8">
+                        <div class="w-16 h-16 bg-accent rounded-lg flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <p>
+                            Our mission is to solve the entire headache, from the first line of a job description to the first line of code.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Talent Section -->
+    <section id="our-talent" class="py-20 px-4 bg-white scroll-mt-28">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16 animate-slide-up">
+                Meet the Caliber of Our Engineers
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Profile 1 -->
+                <div class="card-shadow bg-white rounded-2xl p-8 border border-gray-100 animate-slide-up">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Senior Full-Stack Specialist</h3>
+                    <p class="text-primary font-semibold text-center mb-4">8 Years Experience</p>
+                    
+                    <div class="flex flex-wrap gap-2 justify-center mb-6">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">React</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Next.js</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">AWS</span>
+                    </div>
+                    
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        Deep experience building and maintaining scalable applications for the US market. A pragmatic problem-solver who excels at owning features from end to end.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="#contact" class="bg-accent hover:bg-primary-light text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">
+                            Hire Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile 2 -->
+                <div class="card-shadow bg-white rounded-2xl p-8 border border-gray-100 animate-slide-up">
+                    <div class="w-20 h-20 bg-gradient-to-br from-accent to-primary-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 010 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h6a1 1 0 010 2H4a1 1 0 01-1-1zM14 9a1 1 0 011 1v5a1 1 0 11-2 0v-5a1 1 0 011-1zM16 10a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zM18 12a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1z"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Data & Scraping Engineer</h3>
+                    <p class="text-primary font-semibold text-center mb-4">6 Years Experience</p>
+                    
+                    <div class="flex flex-wrap gap-2 justify-center mb-6">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">ETL Pipelines</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">PostgreSQL</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">AWS</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Puppeteer</span>
+                    </div>
+                    
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        A backend specialist with a passion for building robust data systems. Proven experience architecting and scaling data ingestion and processing pipelines.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="#contact" class="bg-accent hover:bg-primary-light text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">
+                            Hire Now
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Profile 3 -->
+                <div class="card-shadow bg-white rounded-2xl p-8 border border-gray-100 animate-slide-up">
+                    <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M9.504 1.132a1 1 0 01.992 0l1.75 1a1 1 0 11-.992 1.736L10 3.152l-1.254.716a1 1 0 11-.992-1.736l1.75-1zM5.618 4.504a1 1 0 01-.372 1.364L5.016 6l.23.132a1 1 0 11-.992 1.736L4 7.723V8a1 1 0 01-2 0V6a.996.996 0 01.52-.878l1.734-.99a1 1 0 011.364.372zm8.764 0a1 1 0 011.364-.372l1.733.99A1.002 1.002 0 0118 6v2a1 1 0 11-2 0v-.277l-.254.145a1 1 0 11-.992-1.736l.23-.132-.23-.132a1 1 0 01-.372-1.364zm-7 4a1 1 0 011.364-.372L10 8.848l1.254-.716a1 1 0 11.992 1.736L11 10.58V12a1 1 0 11-2 0v-1.42l-1.246-.712a1 1 0 01-.372-1.364zM3 11a1 1 0 011 1v1.42l1.246.712a1 1 0 11-.992 1.736l-1.75-1A1 1 0 012 14v-2a1 1 0 011-1zm14 0a1 1 0 011 1v2a1.002 1.002 0 01-.504.868l-1.75 1a1 1 0 11-.992-1.736L16 13.42V12a1 1 0 011-1zm-9.618 5.504a1 1 0 011.364-.372l.254.145V16a1 1 0 112 0v.277l.254-.145a1 1 0 11.992 1.736l-1.735.992a.995.995 0 01-1.022 0l-1.735-.992a1 1 0 01-.372-1.364z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">Mini-CTO / Tech Lead</h3>
+                    <p class="text-primary font-semibold text-center mb-4">10+ Years Experience</p>
+                    
+                    <div class="flex flex-wrap gap-2 justify-center mb-6">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Team Leadership</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">System Architecture</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">LLM API Integration</span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">AWS Serverless</span>
+                    </div>
+                    
+                    <p class="text-gray-600 text-center leading-relaxed mb-6">
+                        A seasoned, hands-on leader with experience managing and growing engineering teams. An expert in both technical architecture and high-EQ team management.
+                    </p>
+                    
+                    <div class="text-center">
+                        <a href="#contact" class="bg-accent hover:bg-primary-light text-white font-semibold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:outline-none">
+                            Hire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section id="our-process" class="py-20 px-4 gradient-bg scroll-mt-28">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16 animate-slide-up">
+                Our Vetting Process: Signal Over Noise
+            </h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center animate-slide-up">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-8">
+                        <span class="text-white text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Deep Sourcing & Profile Matching</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We go beyond LinkedIn, tapping into our deep network in the Chinese tech community to find candidates who match your technical and cultural bar.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center animate-slide-up">
+                    <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center mx-auto mb-8">
+                        <span class="text-white text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Rigorous Technical Vetting</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every candidate goes through a multi-stage vetting process, including a real-world take-home assignment and a live technical screen to test their true problem-solving ability.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center animate-slide-up">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-8">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Elite Finalist Delivery</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We don't waste your time. You will only meet with the top 2-3 elite, pre-vetted candidates who we are confident can do the job from day one.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/CTA Section -->
+    <section id="contact" class="py-20 px-4 bg-white scroll-mt-28">
+        <div class="max-w-4xl mx-auto text-center animate-slide-up">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Ready to Build Your Team?
+            </h2>
+            
+            <p class="text-xl text-gray-600 mb-12">
+                Let's find your next great engineer. Schedule a no-obligation, 15-minute consultation to discuss your needs.
+            </p>
+            
+            <div class="card-shadow bg-gray-50 rounded-2xl p-8 md:p-12 max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-sm font-semibold text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200">
+                        </div>
+                        <div>
+                            <label for="company" class="block text-sm font-semibold text-gray-700 mb-2">Company</label>
+                            <input type="text" id="company" name="company" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200">
+                    </div>
+                    
+                    <div>
+                        <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200" placeholder="Tell us about your engineering needs..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-primary hover:bg-primary-light text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105">
+                        Schedule Consultation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - Bravo Zoom brand -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-6xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-4">Bravo Zoom</h3>
+            <p class="text-gray-400">
+                Unlocking world-class Chinese engineering talent for forward-thinking companies.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // IntersectionObserver for slide-up animations (with graceful fallback)
+        const slideUpObserver = ('IntersectionObserver' in window)
+            ? new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { rootMargin: '0px 0px -150px 0px' })
+            : null;
+
+        // Form submission handler (EmailJS)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.name || !data.email || !data.company) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Sending...';
+            submitButton.disabled = true;
+
+            // EmailJS template parameters for your notification
+            const notificationParams = {
+                to_email: 'hanyao.li@bravozoom.io',
+                from_name: data.name,
+                from_company: data.company,
+                from_email: data.email,
+                message: data.message || 'No additional message provided.',
+                subject: 'New Consultation Request - Bravo Zoom'
+            };
+
+            // EmailJS template parameters for customer confirmation
+            const customerParams = {
+                to_email: data.email,
+                customer_name: data.name,
+                calendly_link: 'https://calendly.com/hanyao-li-bravozoom/30min',
+                subject: 'Thank you for your interest in Bravo Zoom'
+            };
+
+            // Send notification email to you
+            emailjs.send('service_jpgcb3k', 'template_gu9gonb', notificationParams)
+                .then(function(response) {
+                    console.log('Notification sent!', response.status, response.text);
+                    
+                    // Send confirmation email to customer
+                    return emailjs.send('service_jpgcb3k', 'template_yh56n3l', customerParams);
+                })
+                .then(function(response) {
+                    console.log('Confirmation sent!', response.status, response.text);
+                    alert('Thank you for your interest! Check your email for our Calendly link to schedule your consultation.');
+                    document.querySelector('form').reset();
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    alert('Sorry, there was an error sending your message. Please try again or contact us directly.');
+                })
+                .finally(function() {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                });
+        });
+
+        // Initialize slide-up elements as invisible
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = document.querySelectorAll('.animate-slide-up');
+            elements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(30px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                if (slideUpObserver) {
+                    slideUpObserver.observe(element);
+                }
+            });
+
+            // Fallback for browsers without IntersectionObserver
+            if (!slideUpObserver) {
+                const fallback = () => {
+                    const windowHeight = window.innerHeight;
+                    elements.forEach(element => {
+                        const elementTop = element.getBoundingClientRect().top;
+                        const elementVisible = 150;
+                        if (elementTop < windowHeight - elementVisible) {
+                            element.style.opacity = '1';
+                            element.style.transform = 'translateY(0)';
+                        }
+                    });
+                };
+                window.addEventListener('scroll', fallback);
+                window.addEventListener('load', fallback);
+                setTimeout(fallback, 100);
+            }
+        });
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            if (mobileButton && mobileMenu) {
+                mobileButton.addEventListener('click', () => {
+                    const isExpanded = mobileButton.getAttribute('aria-expanded') === 'true';
+                    mobileButton.setAttribute('aria-expanded', String(!isExpanded));
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when clicking a nav link
+                const mobileLinks = mobileMenu.querySelectorAll('a[href^="#"]');
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        mobileButton.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
